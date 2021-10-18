@@ -55,7 +55,7 @@
 
                 <div class="mb-3 mt-5">
                   <label for="name" class="form-label">Nama Lengkap</label>
-                  <input type="text" class="form-control" id="name" aria-describedby="name" name="data[nama]"
+                  <input type="text" class="form-control" id="name" aria-describedby="name" name="data[Nama]"
                     placeholder="ex : jonatan" required />
                   <div class="invalid-feedback">Isi nama dengan benar !</div>
                   <div class="valid-feedback">Nama sudah oke !</div>
@@ -63,7 +63,7 @@
 
                 <div class="mb-3">
                   <label for="email" class="form-label">Alamat Email</label>
-                  <input type="email" class="form-control" id="email" aria-describedby="email" name="data[email]"
+                  <input type="email" class="form-control" id="email" aria-describedby="email" name="data[Email]"
                     placeholder="ex : ancientlord@email.com" required />
                   <div class="invalid-feedback">
                     Email wajib diisi !
@@ -73,7 +73,7 @@
 
                 <div class="mb-3">
                   <label for="angkatan" class="form-label">Angkatan</label>
-                  <input type="text" class="form-control" id="angkatan" name="data[angkatan]" placeholder="ex : 2020"
+                  <input type="text" class="form-control" id="angkatan" name="data[Angkatan]" placeholder="ex : 2020"
                     required />
                   <div class="invalid-feedback">
                     Angkatan wajib diisi !
@@ -83,7 +83,7 @@
 
                 <div class="mb-3">
                   <label for="jurusan" class="form-label">Jurusan</label>
-                  <input type="text" class="form-control" id="jurusan" name="data[jurusan]" placeholder="ex : TI"
+                  <input type="text" class="form-control" id="jurusan" name="data[Jurusan]" placeholder="ex : TI"
                     required />
                   <div class="invalid-feedback">
                     Jurusan wajib diisi !
@@ -93,7 +93,7 @@
 
                 <div class="mb-3">
                   <label for="phone" class="form-label">Nomor Telepon</label>
-                  <input type="text" class="form-control" id="phone" aria-describedby="phone" name="data[nomor]"
+                  <input type="text" class="form-control" id="phone" aria-describedby="phone" name="data[Nomor]"
                     placeholder="ex : 081xxxxxxx" required />
                   <div class="invalid-feedback">Nomor telepon wajib diisi !</div>
                   <div class="valid-feedback">Looks good!</div>
@@ -108,13 +108,13 @@
                   </label>
                   <br />
                   <div class="form-check radio-input d-flex">
-                    <input class="align-self-center form-check-input" type="radio" name="data[interest]"
+                    <input class="align-self-center form-check-input" type="radio" name="data[Interest]"
                       value="frontend" required />
                     &nbspFrontend
-                    <input type="radio" class="ms-4 align-self-center form-check-input" name="data[interest]"
+                    <input type="radio" class="ms-4 align-self-center form-check-input" name="data[Interest]"
                       value="backend" required />
                     &nbspBackend
-                    <input type="radio" class="ms-4 align-self-center form-check-input" name="data[interest]"
+                    <input type="radio" class="ms-4 align-self-center form-check-input" name="data[Interest]"
                       value="fullstack" required />
                     &nbspFullstack
                   </div>
@@ -181,11 +181,10 @@
       Swal.fire({
         title: '<strong>Pendaftaran berhasil</strong>',
         icon: 'success',
-        html: 'Klik tombol oke untuk bergabung di grup WhatsApp',
+        html: 'Klik next untuk bergabung di grup WhatsApp',
         showCancelButton: false,
         focusConfirm: false,
-        confirmButtonText: '<i class="fa fa-thumbs-up"></i> Oke',
-        confirmButtonAriaLabel: 'Thumbs up, great!',
+        confirmButtonText: 'Next',
       }).then(function () {
         window.location.href = "https://chat.whatsapp.com/Gacd3U1jM1V13X9hzEG9vB";
       })

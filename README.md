@@ -1,1 +1,1 @@
-# Website ladning page komunitas StackIt
+# Website landing page komunitas StackIt
